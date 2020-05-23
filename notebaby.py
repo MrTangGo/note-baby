@@ -119,7 +119,10 @@ def nt(name_en):
 
     # 新建info.yaml文件
     note_name_en = re.sub("[A-Z]", lambda x: " " + x.group(0), new_folder_name).strip()
-    contents = {'note_name_en': note_name_en}
+    contents = {
+        'note_name_en': note_name_en,
+        'chapter_list': [],
+    }
     note_yaml_path = new_folder_path + '/' + "info.yaml"
     write_yaml_file(note_yaml_path, contents)
 

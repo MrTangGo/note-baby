@@ -5,7 +5,7 @@ ROOT_PATH = '/Users/tadx2/Note/note'
 EDITOR_TOOL = 'mvim'
 
 # 当前笔记本名
-CURRENT_NOTE_NAME = ' I just Want to Test'
+CURRENT_NOTE_NAME = 'learn git'
 
 # 当前笔记本路径名
 # def name_to_path(option, name_en):
