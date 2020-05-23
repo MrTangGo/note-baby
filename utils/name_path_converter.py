@@ -16,12 +16,13 @@ def name_path_converter(option=None, name_en=None, name_path=None):
     if option == 'chapter':
         note_folder_name = CURRENT_NOTE_NAME.title().replace(" ", "")
         note_folder_path = ROOT_PATH + '/' + note_folder_name
-
         chapter_folder_name = name_en.strip().lower().replace(" ", "_")
         chapter_folder_path = note_folder_path + '/src/chapters/' + chapter_folder_name
 
+        type_in_chapter_name_en = name_en.strip().lower()
+
         note_info = {
-            'type_in_chapter_name': name_en,
+            'type_in_chapter_name': type_in_chapter_name_en,
             'note_folder_name': note_folder_name,
             'note_folder_path': note_folder_path,
             'chapter_folder_name': chapter_folder_name,
