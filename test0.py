@@ -1,9 +1,7 @@
-import fire
-
-
-def hello(name):
-    return 'Hello {name}!'.format(name=name)
-
+from config import *
+from utils.yaml_methods import read_yaml_file, write_yaml_file
 
 if __name__ == '__main__':
-    fire.Fire(hello)
+
+
+
